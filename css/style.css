@@ -1,0 +1,241 @@
+
+/** GLOBAL **/
+body, html {
+    height: 100%;
+    background-color: #27233A;
+}
+
+.row {
+    display: flex;
+    padding: 40px;
+}
+
+
+.column{
+    flex: 50%;
+    border: 1px ghostwhite solid;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.column-3 {
+    flex: 30%;
+    padding: 20px;
+    border: 1px ghostwhite solid;
+    margin: 0 10px 0 10px;
+    
+}
+@media(max-width: 800px){
+    .row {
+        display: flex;
+        flex-direction: column;
+        padding: 0 40px 0 40px;
+    }
+    .column {
+      flex: 100%;
+      float: left;
+      margin-bottom: 20px;
+    }
+    .column-3 {
+        flex:100%;
+        margin-top: 10px;
+    }
+    
+  }
+
+.column ul {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+section h2{
+    margin: 0;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+
+section h5{
+    font-style: italic;
+}
+
+.crop{
+    width: 250px;
+    overflow: hidden;
+}
+/** TEXT STYLING **/
+
+h1 {
+    font-family: 'BioRhyme', serif;
+    color: ghostwhite;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+h2, h3 {
+    font-family: 'BioRhyme', serif;
+    color: ghostwhite;
+    letter-spacing: 0.1em;
+}
+
+h3 {
+    font-family: 'Space Mono', monospace;
+}
+
+h4, h5, ul{
+    font-family: 'Space Mono', monospace;
+    color: ghostwhite;
+    letter-spacing: 0.1em;
+}
+
+a {
+    font-family: 'Space Mono', monospace;
+    text-transform: uppercase;
+    color: ghostwhite;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+}
+
+p{
+    font-family: 'Space Mono', monospace;
+    color: ghostwhite; 
+}
+
+/** NAV **/
+
+nav {
+    background-color: #27233A;
+}
+
+.navigation {
+    text-align:left;
+    font-family: 'Space Mono', monospace;
+    letter-spacing: 0.1em;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navigation li{
+    display: inline-block;
+    padding-right: 2em;
+}
+
+/** --------- ALL SECTIONS --------- **/
+
+/** HEADER **/
+
+/** HERO **/
+
+.hero-img {
+    line-height: 0;
+    width: 100%;
+    height: 600px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/kitchen.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.hero-txt{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-position: center;
+
+}
+
+#hero-icon{
+    height: 120px;
+    color: ghostwhite;
+    padding-bottom: 11px;
+}
+
+/** MENU **/
+
+.menu {
+    background-color:#27233A;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.menu h2 {
+    margin: 0;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+
+
+.menu ul li {
+    list-style-type: none;
+    padding-bottom: 1.5em;
+}
+
+/** BLOG **/
+
+.blog {
+    background-color: #BBB8B2;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.blog h2 {
+    text-shadow: 1px #000000;
+}
+.blog h2 {
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.blog-image {
+    width: 85%;
+    margin: auto;
+    padding-bottom: 15px;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.blog h5{
+    width: 75%;
+    margin: auto;
+}
+
+
+
+/** CONTACT **/
+
+.contact{
+    background-color:#27233A;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.contact .map{
+    padding-top: 20px;
+    width: 60%;
+}
+.contact hr{
+    width: 60%;
+}
+/** FOOTER **/
+
+footer {
+    background-color: #27233A;
+    margin:0;
+}
+
+footer h5{
+    margin: 0;
+}
+
+footer p{
+    letter-spacing: 0.15em;
+    padding-left: 10px;
+}
